@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for react-big-calendar */
+.rbc-calendar-custom {
+  font-family: inherit;
+}
+
+.rbc-calendar-custom .rbc-month-view {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rbc-calendar-custom .rbc-header {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 8px;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+}
+
+.rbc-calendar-custom .rbc-date-cell {
+  padding: 8px;
+  border-right: 1px solid #f3f4f6;
+}
+
+.rbc-calendar-custom .rbc-date-cell:last-child {
+  border-right: none;
+}
+
+.rbc-calendar-custom .rbc-month-row {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.rbc-calendar-custom .rbc-month-row:last-child {
+  border-bottom: none;
+}
+
+.rbc-calendar-custom .rbc-day-bg {
+  background-color: white;
+}
+
+.rbc-calendar-custom .rbc-day-bg:hover {
+  background-color: #f9fafb;
+}
+
+.rbc-calendar-custom .rbc-today {
+  background-color: #fef3c7;
+}
+
+.rbc-calendar-custom .rbc-off-range-bg {
+  background-color: #f9fafb;
+}
+
+.rbc-calendar-custom .rbc-event {
+  border: none !important;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 1px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.rbc-calendar-custom .rbc-event:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+
+.rbc-calendar-custom .rbc-toolbar {
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+
+.rbc-calendar-custom .rbc-toolbar button {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.rbc-calendar-custom .rbc-toolbar button:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.rbc-calendar-custom .rbc-toolbar button.rbc-active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.rbc-calendar-custom .rbc-toolbar-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Custom scrollbar for tooltip content */
+.max-h-32::-webkit-scrollbar {
+  width: 4px;
+}
+
+.max-h-32::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.max-h-32::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+.max-h-32::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
