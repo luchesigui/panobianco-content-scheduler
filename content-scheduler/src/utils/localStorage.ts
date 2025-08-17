@@ -31,3 +31,9 @@ export function updateContentInStorage(updatedContent: ContentPiece): void {
     saveContentToStorage(allContent);
   }
 }
+
+export function addContentToStorage(newContent: ContentPiece): void {
+  const allContent = loadContentFromStorage();
+  const updatedContent = [...allContent, newContent];
+  saveContentToStorage(updatedContent);
+}
